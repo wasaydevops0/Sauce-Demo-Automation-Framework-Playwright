@@ -1,0 +1,12 @@
+{
+  "locators": {
+    "title": ".title",
+    "addToCartPrefix": "[data-test=\"add-to-cart-",
+    "addToCartSuffix": "\"]"
+  },
+  "data": {
+    "expectedUrl": "https://www.saucedemo.com/inventory.html",
+    "expectedTitleText": "Products",
+    "productToSelect": "sauce-labs-backpack"
+  }
+}

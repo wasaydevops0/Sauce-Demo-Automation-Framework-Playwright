@@ -1,0 +1,7 @@
+{
+  "locators": {
+    "burgerMenuButton": "#react-burger-menu-btn",
+    "logoutLink": "#logout_sidebar_link",
+    "shoppingCartIcon": ".shopping_cart_link"
+  }
+}

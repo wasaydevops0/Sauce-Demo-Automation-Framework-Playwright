@@ -1,0 +1,19 @@
+{
+  statusCode: 200,
+  data: {
+    user: {
+      _id: '6a9549397742fc5d5d7f9b82',
+      username: 'string',
+      email: 'string',
+      fullname: 'string',
+      createdAt: '2026-08-31T09:28:25.603Z',
+      updatedAt: '2026-09-01T09:28:57.828Z',
+      __v: 0
+    },
+    accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTk1NDkzOTc3NDJmYzVkNWQ3ZjliODIiLCJlbWFpbCI6InN0cmluZyIsInVzZXJuYW1lIjoic3RyaW5nIiwiaWF0IjoxNzg4MjU0OTM3LCJleHAiOjE3ODgzNDEzMzd9.e5nOs2TMJUaschtmlOioXgL6DJEgttKWVEai1_Ox5R8',
+    refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTk1NDkzOTc3NDJmYzVkNWQ3ZjliODIiLCJlbWFpbCI6InN0cmluZyIsInVzZXJuYW1lIjoic3RyaW5nIiwiaWF0IjoxNzg4MjU0OTM3LCJleHAiOjE3ODkxMTg5Mzd9.lwSr23onz4dBJyARcBhYnUrJYuNzUtDLnNuiNr4JcBs'
+  },
+  message: 'User Logged in successfully',
+  success: true
+}
+200

@@ -1,0 +1,34 @@
+{
+  "locators": {
+    "firstNameInput": "[data-test=\"firstName\"]",
+    "lastNameInput": "[data-test=\"lastName\"]",
+    "postalCodeInput": "[data-test=\"postalCode\"]",
+    "continueButton": "[data-test=\"continue\"]",
+    "finishButton": "[data-test=\"finish\"]",
+    "completeHeader": ".complete-header",
+    "backHomeButton": "[data-test=\"back-to-products\"]"
+  },
+  "data": {
+    "stepOneExpectedUrl": "https://www.saucedemo.com/checkout-step-one.html",
+    "stepTwoExpectedUrl": "https://www.saucedemo.com/checkout-step-two.html",
+    "completeExpectedUrl": "https://www.saucedemo.com/checkout-complete.html",
+    "completeExpectedMessage": "Thank you for your order!",
+    "checkoutUsers": [
+      {
+        "firstName": "John",
+        "lastName": "Doe",
+        "postalCode": "12345"
+      },
+      {
+        "firstName": "Alice",
+        "lastName": "Smith",
+        "postalCode": "98765"
+      },
+      {
+        "firstName": "Bob",
+        "lastName": "Johnson",
+        "postalCode": "55555"
+      }
+    ]
+  }
+}

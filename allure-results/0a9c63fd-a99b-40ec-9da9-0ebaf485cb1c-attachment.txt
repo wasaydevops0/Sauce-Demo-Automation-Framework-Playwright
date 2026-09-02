@@ -1,0 +1,23 @@
+API Cookies Array: [
+  {
+    name: 'accessToken',
+    value: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTk1NDkzOTc3NDJmYzVkNWQ3ZjliODIiLCJlbWFpbCI6InN0cmluZyIsInVzZXJuYW1lIjoic3RyaW5nIiwiaWF0IjoxNzg4MjU0OTMyLCJleHAiOjE3ODgzNDEzMzJ9.4UNLgiTI5PfKXromQLX8srXfQjcKIF0Dp0wN4FUMgwY',
+    domain: 'api-testing-postman.vercel.app',
+    path: '/',
+    expires: -1,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'Lax'
+  },
+  {
+    name: 'refreshToken',
+    value: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTk1NDkzOTc3NDJmYzVkNWQ3ZjliODIiLCJlbWFpbCI6InN0cmluZyIsInVzZXJuYW1lIjoic3RyaW5nIiwiaWF0IjoxNzg4MjU0OTMyLCJleHAiOjE3ODkxMTg5MzJ9.w45f3MIyj3GRGusIbMgJNX5HdbTfd2VOGGRZWR7Pvbs',
+    domain: 'api-testing-postman.vercel.app',
+    path: '/',
+    expires: -1,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'Lax'
+  }
+]
+[]

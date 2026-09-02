@@ -1,0 +1,8 @@
+{
+  "locators": {
+    "checkoutButton": "[data-test=\"checkout\"]"
+  },
+  "data": {
+    "expectedUrl": "https://www.saucedemo.com/cart.html"
+  }
+}
