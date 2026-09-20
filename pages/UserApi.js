@@ -40,6 +40,46 @@ class UserApi {
     });
     return response;
   }
+
+  async changePassword(data, token) {
+    const response = await this.request.post(`${this.baseURL}/change-password`, {
+      data,
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    return response;
+  }
+
+  async updateAccount(data, token) {
+    const response = await this.request.patch(`${this.baseURL}/update-account`, {
+      data,
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    return response;
+  }
+
+  async replaceAccount(data, token) {
+    const response = await this.request.put(`${this.baseURL}/replace-account`, {
+      data,
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    return response;
+  }
+
+  async getAllUsers() {
+    const response = await this.request.get(`${this.baseURL}/all-users`);
+    return response;
+  }
+
+  async getUserByUsername(username) {
+    const response = await this.request.get(`${this.baseURL}/user/${username}`);
+    return response;
+  }
 }
 
 export { UserApi };

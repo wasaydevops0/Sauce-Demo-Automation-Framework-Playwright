@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx allure generate ./allure-results --clean && npx allure open ./allure-report",
+    "report:serve": "npx allure serve ./allure-results"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -11,6 +15,7 @@
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.2.0",
+    "allure-commandline": "^2.43.0",
     "allure-playwright": "^3.10.2"
   }
 }
