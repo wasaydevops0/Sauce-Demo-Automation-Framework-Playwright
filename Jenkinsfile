@@ -21,22 +21,23 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                // Installs packages from your package.json
-                sh 'npm ci'
+                // Installs packages from your package.json on Windows
+                bat 'npm ci'
             }
         }
 
         stage('Install Playwright Browsers') {
             steps {
-                // Installs the specific browsers and their OS dependencies
-                sh 'npx playwright install --with-deps'
+                // Installs the specific browsers on Windows.
+                // Note: Windows doesn't use linux '--with-deps', so we run standard install
+                bat 'npx playwright install'
             }
         }
 
         stage('Execute Tests') {
             steps {
-                // Runs the test suite in headless mode
-                sh 'npx playwright test'
+                // Runs the test suite in headless mode on Windows
+                bat 'npx playwright test'
             }
         }
     }
@@ -44,9 +45,9 @@ pipeline {
     post {
         always {
             // Publishes the JUnit results to the Jenkins Build UI
-            junit 'results.xml'
+            junit allowEmptyResults: true, testResults: 'results.xml'
             
-            // Optional: Keeps your Playwright HTML reports as Jenkins artifacts
+            // Keeps your Playwright HTML reports as Jenkins build artifacts
             archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
         }
     }
