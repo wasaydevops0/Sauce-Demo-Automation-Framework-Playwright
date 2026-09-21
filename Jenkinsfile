@@ -1,6 +1,8 @@
 pipeline {
     agent any
-    
+    triggers {
+        githubPush()
+    }
     tools {
         // References the Node.js configuration name in Jenkins Global Tool Configuration
         nodejs 'node' 
