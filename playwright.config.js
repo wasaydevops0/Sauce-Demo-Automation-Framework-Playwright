@@ -13,6 +13,10 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
+   reporter: [
+    ['html'], // Retains the default HTML report
+    ['junit', { outputFile: 'results.xml' }] // Adds Jenkins-readable XML
+  ],
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
