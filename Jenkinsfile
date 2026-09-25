@@ -32,6 +32,11 @@ pipeline {
                 sh 'npx playwright test'
             }
         }
+        stage('Debug Docker') {
+            steps {
+                bat 'docker version'
+            }
+}
     }
 
     post {
