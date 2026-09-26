@@ -1,17 +1,14 @@
 pipeline {
     agent {
         docker {
-            image 'mcr.microsoft.com/playwright:v1.62.1'  // match npx playwright --version exactly
+            image 'mcr.microsoft.com/playwright:v1.62.1'
+            label 'wsl-docker'
             args '-u root:root'
         }
     }
 
     triggers {
         githubPush()
-    }
-
-    environment {
-        DOCKER_HOST = 'tcp://localhost:2375'  // only needed if Jenkins runs as a service account — remove if not needed
     }
 
     stages {
@@ -32,11 +29,6 @@ pipeline {
                 sh 'npx playwright test'
             }
         }
-        stage('Debug Docker') {
-            steps {
-                bat 'docker version'
-            }
-}
     }
 
     post {
